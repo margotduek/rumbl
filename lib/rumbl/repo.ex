@@ -1,9 +1,10 @@
 defmodule Rumbl.Repo do
-  #use Ecto.Repo, otp_app: :rumbl
+  use Ecto.Repo, otp_app: :rumbl
 
   @moduledoc """
   In memory repository.
-  """
+
+  this was a homemade "db" so that we can learn faster 
 
   def get(module, id) do
     Enum.find all(module), fn map -> map.id == id end
@@ -24,5 +25,5 @@ defmodule Rumbl.Repo do
   end
 
   def all(_module), do: []
-
+"""
  end
