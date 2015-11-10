@@ -4,7 +4,7 @@ defmodule Rumbl.Repo do
   @moduledoc """
   In memory repository.
 
-  this was a homemade "db" so that we can learn faster 
+  this was a homemade "db" so that we can learn faster  
 
   def get(module, id) do
     Enum.find all(module), fn map -> map.id == id end
